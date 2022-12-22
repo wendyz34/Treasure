@@ -124,7 +124,7 @@ public class Town
             if (Math.random() > noTroubleChance)
             {
                 printMessage += "Okay, stranger! You proved yer mettle. Here, take my gold.";
-                if(goldDiff.enterTown()){
+                if(!toughTown){
                     printMessage += "\nYou won the brawl and receive " +  100 + " gold.";
                 }
                 printMessage += "\nYou won the brawl and receive " +  goldDiff + " gold.";
